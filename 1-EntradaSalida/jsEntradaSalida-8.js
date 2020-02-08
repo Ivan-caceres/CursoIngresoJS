@@ -9,9 +9,12 @@ function SacarResto()
 	var resto;
 
 	dividendo=document.getElementById('numeroDividendo').value;
+	dividendo=parseInt(dividendo);
+
 	divisor=document.getElementById('numeroDivisor').value;
+	divisor=parseInt(divisor);
 
 	resto=dividendo%divisor;
 
-	console.log(resto);
+	alert(resto);
 }

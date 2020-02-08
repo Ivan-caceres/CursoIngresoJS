@@ -6,30 +6,69 @@ function sumar()
 {	
 	var primerNumero;
 	var segundoNumero;
-	var resultadoDeLaSuma; //escribir la variable de la forma mas explicita posible para evitar errores//
-  
+	var suma;
+
 	primerNumero=document.getElementById('numeroUno').value;
 	primerNumero=parseInt(primerNumero);
+
 	segundoNumero=document.getElementById('numeroDos').value;
 	segundoNumero=parseInt(segundoNumero);
 
-	resultadoDeLaSuma=primerNumero+segundoNumero;
-	console.log(resultadoDeLaSuma);
-	
+	suma=primerNumero+segundoNumero;
+
+	alert("La suma es "+suma);
+
+
 }
 
 function restar()
 {
-	
+	var primerNumero;
+	var segundoNumero;
+	var resta;
+
+	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
+
+	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
+
+	resta=primerNumero-segundoNumero;
+
+	alert("La resta es "+resta);
 }
 
 function multiplicar()
 { 
-	
+	var primerNumero;
+	var segundoNumero;
+	var multiplicacion;
+
+	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
+
+	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
+
+	multiplicacion=primerNumero*segundoNumero;
+
+	alert("La multiplicacion es "+multiplicacion);
 }
 
 function dividir()
 {
-	
+	var primerNumero;
+	var segundoNumero;
+	var division;
+
+	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
+
+	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
+
+	division=primerNumero/segundoNumero;
+
+	alert("La division es "+division);
 }
 
