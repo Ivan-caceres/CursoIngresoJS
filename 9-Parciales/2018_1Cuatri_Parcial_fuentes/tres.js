@@ -1,18 +1,19 @@
 function mostrar()
 {
-	var ingreso;
+	var precio;
 	var porcentaje;
-	var precioFinal;
 	var descuento;
+	var precioFinal;
 
-	ingreso=prompt("Ingrese un numero");
-	ingreso=parseInt(ingreso);
+	precio=prompt("Ingrese el precio");
+	precio=parseInt(precio);
 
-	porcentaje=prompt("Ingrese el porcentaje a calcular");
+	porcentaje=prompt("Ingrese el porcentaje de descuento");
 	porcentaje=parseInt(porcentaje);
 
-	descuento=ingreso*porcentaje/100;
-	
-	precioFinal=document.getElementById('elPrecioFinal').value=descuento+ingreso;
-	console.log(precioFinal);
+	descuento=precio*porcentaje/100;
+
+	precioFinal=precio-descuento;
+
+	document.getElementById('elPrecioFinal').value=precioFinal;
 }
