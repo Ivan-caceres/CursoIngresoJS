@@ -7,11 +7,12 @@ si tiene 31 días.
 function mostrar()
 {
 	var mesDelAño = document.getElementById('mes').value;
+	var  mensaje;
 
 	switch(mesDelAño) 
 	{
 		case "Febrero":
-			alert("Este mes tiene 28 días");
+			mensaje="Este mes tiene 28 días";
 			break;
 		case "Enero":
 		case "Marzo":
@@ -20,14 +21,14 @@ function mostrar()
 		case "Agosto":
 		case "Octubre":
 		case "Diciembre":
-			alert("Este mes tiene 31 días");
+			mensaje="Este mes tiene 31 días";
 			break;
 		default:
-			alert("Este mes tiene 30 días");
+			mensaje="Este mes tiene 30 días";
 			break;		
 	}
 
-	
+	alert(mensaje); 	
 	
 
 

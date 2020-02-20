@@ -8,25 +8,25 @@ ACLARAcIÓN: tomamos a Julio y Agosto como los meses de Invierno.
 function mostrar()
 {  
 	var mesDelAño = document.getElementById('mes').value;
+	var mensaje;
 
 	switch (mesDelAño) 
 	{
 		case "Julio":
 		case "Agosto":
-			alert("Abrigate que hace frio.");
+			mensaje="Abrigate que hace frio.";
 			break;
 		case "Septiembre":
 		case "Octubre":
 		case "Noviembre":
 		case "Diciembre":
-			alert("Ya pasamos el frio, ahora calor!!!.");
+			mensaje="Ya pasamos el frio, ahora calor!!!.";
 			break;
 		default:
-			alert("Falta para el invierno.");
+			mensaje="Falta para el invierno.";
 			break;		
 	}
 
-
-
+	alert(mensaje);
 
 }//FIN DE LA FUNCIÓN
